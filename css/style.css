@@ -1,0 +1,695 @@
+/*---------- Reset ------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*---------------- base styles ------------------*/
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('opensans-regular-webfont.woff2') format('woff2'),
+         url('opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tex_gyre_herosregular';
+    src: url('texgyreheros-regular-webfont.woff2') format('woff2'),
+         url('texgyreheros-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'tex_gyre_herosregular', sans-serif;
+  color: #303030;
+}
+
+h1 { font-size: 2.5em; }
+
+h2 {
+  font-size: 2em;
+  padding: .7em 0 .7em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  padding: .7em 0 .7em 0;
+}
+
+p {
+  font-size: 1em;
+  color: #303030;
+ }
+
+
+h1, h2 {
+  font-family: 'open_sansregular', sans-serif;
+  color: #363A45;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-----------------------------------------------*/
+
+
+#menu-icon {
+	font-size: 3em;
+  position: absolute;
+  right: .5em;
+  color: #fff;
+}
+
+#logo {
+  display: inline-block; /* div acts like a block but is width of the text in it*/
+  text-align: center;
+  line-height: 1.8em;
+}
+
+
+nav {
+  display: none;
+}
+
+
+header {
+  height: 6em;
+  background-color: #363A45;
+  }
+
+.gradient {
+  background-image: linear-gradient( to right, white, #363A45 40% );
+}
+
+
+header p {
+  color: #fff;
+}
+
+/* due to issues on mobile device with portion of footer being cut office
+    these two lines of code resolved problem.  */
+.container {
+  min-height: 100%;
+  height: 100%;
+}
+
+/*-----------------------------HOME Page---------------------------*/
+
+
+
+#banner-top {
+  background-image: url('../images/girlcodefacepexels.jpeg');
+  height: 22em;
+  background-size: cover;
+  background-position: center;
+}
+
+/*---- Hamburger menu functionality for mobile ---*/
+
+#mylinks {
+  display: none;
+}
+
+
+#mylinks ul {
+  margin-top: .5em;
+}
+
+#mylinks ul {
+  list-style-type: none;
+
+}
+
+#mylinks a {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0,0,0,1);
+  font-size: 1.2em;
+  text-align: center;
+  padding: .5em;
+  box-sizing: border-box;
+}
+
+#mylinks a:active, #mylinks a:hover {
+  background-color: #009ddb;
+}
+
+/*-------------------------------------------------*/
+
+/* mainset for index, certification, and contact pages */
+.mainset {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mainset p {
+    padding: .7em 0;
+}
+
+.maincol {
+  width: 100%;
+}
+
+
+.strip {
+  background-color: #009ddb; /*background colour for course name heading*/
+  height: 6em;
+  font-size: 70%;
+  position: relative;
+}
+
+.strip h2 {
+  color: #fff;
+  padding-left: 1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spacebtm {     /* insert some space below */
+  margin-bottom: 2em;
+}
+
+.linka {
+  padding: .7em;
+  border-radius: 1em;
+  background-color: #009ddb;
+  color: #dbdbdb;
+  /*color: #363A45;*/
+  font-weight: bold;
+}
+
+.linka:hover {
+  background-color: #005a8a;
+  color: #fff;
+  transition: .5s;
+}
+
+.sidebar h3, #sidebar p {
+
+  color: #009ddb;
+}
+
+.sidebar {
+  font-size: 90%;
+  margin-top: 2em;
+}
+
+footer {
+  background-color: #171c20;
+  min-height: 60em;
+  height: 100%;
+}
+
+#bottomnav {
+  display: block;
+  margin-top: 8em;
+}
+
+#bottomnav a {
+  color: #fff;
+  margin-top: 2em;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: .7em;
+}
+
+#bottomnav li {
+  margin-top: 1em;
+}
+
+#bottomnav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#bottomnav li a:hover, #bottomnav li a:focus, #bottomnav li a:active {
+  color: #009ddb;
+  transition: 1s;
+}
+
+#banner-bottom {
+  background-image: url('../images/keyboardlargepexels.jpg');
+  background-position: center;
+  height: 22em;
+
+}
+
+.footer-wrap {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-det {
+  margin-top: 9em;
+}
+
+.contact-det p {
+  color: #fff;
+}
+
+.first-contact {
+  margin-bottom: 4em;
+}
+
+
+.copyri {
+  padding-top: 8em;
+  font-size: .875em;
+  color: #fff;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*--------------------------media query tablet---------------------*/
+
+@media only screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* menu-icon not displayed on desktop */
+   #menu-icon {
+      display:none;
+    }
+
+  nav {
+    display: block;
+  }
+
+
+  /* nav display in row */
+    nav ul {
+        list-style-type:none;
+        display: flex;
+        padding: 1em;
+    }
+
+    li a {
+      margin-right: 1em; /*space between navigation items*/
+      color: #fff;
+    }
+
+    li a:hover, li a:focus, li a:active {
+      color: #009ddb;
+      transition: .4s;
+    }
+
+    li .current {
+      color: #009ddb;
+    }
+
+    .strip {
+      font-size: 100%;
+      height: 7em;
+    }
+    .footer-wrap {
+      flex-direction: row;
+    }
+
+}
+
+/*-----------------------------------------------------------------*/
+
+
+/*--------------------------media query desktop---------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+  .mainset {
+    padding: 2em;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .maincol {
+    width: 60%;
+  }
+
+  .sidebar {
+    margin-top: 0;
+    border: 3px solid #009ddb;
+    padding: 1em;
+  /*  -moz-box-shadow:    3px 3px 5px 6px #009ddb;
+    -webkit-box-shadow: 3px 3px 5px 6px #009ddb;*/
+    box-shadow:         3px 3px 5px 6px #009ddb;
+
+  }
+
+
+}
+/*-----------------------------------------------------------------*/
+
+
+
+
+/*-------------------    A B O U T     P A G E        -----------------*/
+
+#banner-top2 {
+  background-image: url('../images/3studentsoutsidepexels.jpeg');
+  min-height: 22em;
+  background-size: cover;
+  background-position: 30% 30%;
+}
+
+/* mainset2 for about and apply pages */
+.mainset2 {
+  padding: 2em;
+}
+
+.videowrap {
+  max-width: 640px;
+}
+
+
+/* iframe responsive below 560px. This media query prevents the iframe getting too big on wider screen */
+@media screen and (max-width: 560px) {
+  .videowrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .videowrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.threecolumn, .column {
+  margin-top: 1em;
+}
+
+/* indent list items for HTML, CSS, and Javascript */
+.listindent {
+  margin-left: 2em;
+}
+
+.spacetopbtm{
+  margin: 1em 0 6em 0;
+}
+
+.aboutftc {
+  padding: 2em;
+  background-color: #f0f0f0;
+  min-height: 22em;
+  height: 100%;
+}
+
+.centreinfo {
+  width: 100%;
+  padding-top: 3em;
+}
+
+.aboutftc p {
+    padding: .7em 0;
+}
+
+#banner-bottom2 {
+  background-image: url('../images/laptopcodepexelslarge.jpg');
+  background-position: 100% 80%;
+  background-size: cover;
+  min-height: 22em;
+}
+
+/*--------------------------media query tablet---------------------*/
+
+@media only screen and (min-width: 768px) {
+
+  .threecolumn {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .mainset2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .column {
+    width: 30%;
+  }
+
+  .centreinfo {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3em;
+  }
+
+  .centreinfo p {
+
+  }
+}
+/*-----------------------------------------------------------------*/
+
+
+/*--------------------------media query desktop---------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+  .mainset2 {
+    width: 60%;
+  }
+
+  .centreinfo {
+    width: 60%;
+  }
+
+
+}
+/*-----------------------------------------------------------------*/
+
+
+
+/*------------  E N D     O F    A B O U T     P A G E  ------------------*/
+
+
+
+/*-----------    C E R T I F I C A T I O N     P A G E      --------------*/
+
+#banner-top3 {
+  background-image: url('../images/certificationpexels.jpeg');
+  height: 22em;
+  background-size: cover;
+  background-position: 30% 30%;
+}
+
+table {
+  font-family: tex_gyre_herosregular, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0 1em 0;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #bdbdbd;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+#banner-bottom3 {
+  background-image: url('../images/pexelsfingerpointingsuccess.jpeg');
+  background-position: 100% 80%;
+  background-size: cover;
+  height: 22em;
+}
+
+/* for mobile device force table not to behave as such */
+@media only screen and (max-width: 760px)
+{
+
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/* Label the data */
+	td:nth-of-type(1):before { content: "Title"; }
+	td:nth-of-type(2):before { content: "Code"; }
+	td:nth-of-type(3):before { content: "NFQ Level"; }
+	td:nth-of-type(4):before { content: "Award Class"; }
+	td:nth-of-type(5):before { content: "Awarding Body"; }
+	}
+
+
+
+
+  /*-----------------------------------------------------------------*/
+
+
+/*-----  E N D     O F    C E R T I F I C A T I O N    P A G E  ----------*/
+
+
+/*-------------------    A P P L Y     P A G E        -----------------*/
+
+#banner-top4 {
+  background-image: url('../images/courseapplicatiopexelslarge3.jpeg');
+  height: 22em;
+  background-size: cover;
+  background-position: 30% 30%;
+}
+
+.mainset2 {
+  padding: 2em;
+}
+
+.mainset2 ul li {
+  margin-bottom: 1em;
+}
+
+.mainset2 h3 {
+  margin: 2em 0 1em 0;
+}
+
+.mainset2 p {
+  padding: .7em 0;
+}
+
+#banner-bottom4 {
+  background-image: url('../images/guytypingonlaptoplargepexels.jpeg');
+  background-position: 100% 30%;
+  background-size: cover;
+  height: 22em;
+}
+/*------------  E N D     O F    A B O U T     P A G E  ------------------*/
+
+
+
+/*-------------------    C O N T A C T     P A G E        ----------------*/
+
+#banner-top5 {
+  background-image: url('../images/contactgirlonphone.jpeg');
+  height: 22em;
+  background-size: cover;
+  background-position: 30% 30%;
+}
+
+
+#btn {
+  padding: .7em;
+  border-radius: 1em;
+  background-color: #009ddb;
+  color: #dbdbdb;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#btn:hover {
+  background-color: #005a8a;
+  color: #fff;
+  transition: .5s;
+}
+
+
+#textbox {
+  border: 2px solid #009ddb;
+  padding: .5em;
+  font-size: .9em;
+}
+
+#banner-bottom5 {
+  background-image: url('../images/contact3phones.jpeg');
+  background-position: 100% 50%;
+  background-size: cover;
+  height: 22em;
+}
+
+/*------------  E N D     O F    C O N T A C T     P A G E  --------------*/
+
+
+/*--------------------------media query tablet---------------------*/
+
+@media only screen and (min-width: 768px) {
+
+
+}
+/*-----------------------------------------------------------------*/
+
+/*--------------------------media query desktop---------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+.lside, .rside {
+  width: 47%;
+}
+
+.lside {
+  border-right: 1px solid #009ddb;
+}
+
+
+}
+/*-----------------------------------------------------------------*/
